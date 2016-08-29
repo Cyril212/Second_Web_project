@@ -1,0 +1,83 @@
+body
+{
+font-family: 'Lobster', cursive;
+width:100%;
+}
+img
+{
+width:100%;
+}
+a, a:hover, a:visited, a:link, a:active
+{
+text-decoration:none;
+}
+.navbar{
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  opacity:0.5;
+  }
+.navbar-brand {
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    margin: auto; 
+}
+.post-content {
+  position:relative;
+  left: 50%;
+  margin-top:-30%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center; 
+}
+.post-content h3
+{
+font-size: 5.9vw;
+color:white;
+}
+.post-content p
+{
+margin: 0;
+font-size: 3.9vw;
+color:white;
+}
+.backgr
+{
+ widht:100%;
+ position:relative;
+}
+.focus
+{
+padding-top:10%;
+padding-bottom:15%;
+margin-top:8%;
+overflow:hidden;
+background-color:black;
+}
+.dark-center
+{
+ font-size: 5.9vw;
+ color:white;
+}
+.focus .col-sm-4
+{
+ padding:0% 10% 0% 10%; 
+}
+.col-sm-4 p
+{
+ color:white;
+ text-align:center;
+}
+.col-sm-4 img
+{
+padding-top:30%;
+text-align:center;
+width:100%;
+}
+.foot
+{
+
+}
