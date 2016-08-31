@@ -5,13 +5,13 @@
 <div class ="container text-center">
  <h2 class="dark-center ">Brands</h2>
 <div class="col-sm-4">
-      <img src="http://psychoticwoofer.site11.com/wp-content/uploads/2016/07/SIVER-honda-logo.png" class="img-responsive"  alt="Image">
+      <img src="http://psychoticwoofer.site11.com/wp-content/uploads/2016/07/SIVER-honda-logo.png" class="img-responsive"  alt="Image"/>
       <p href="#demo" class="btn btn-info" data-toggle="collapse">Honda</p>  
    <div id="demo" class="collapse">
 <ul class="list-group">           
 <?php
-$args = array('category_name' => 'review', 'posts_per_page'   => 3);
-$myposts = get_posts( $argsi0 );
+$args = array('category' => 10, 'posts_per_page'   => 3);
+$myposts = get_posts( $args);
 foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
 	<li class ="list-group-item" >
 		<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
@@ -177,13 +177,24 @@ wp_reset_postdata();?>
     </div>
     </div>
     <div class="col-sm-4">
-      <img src="http://psychoticwoofer.site11.com/wp-content/uploads/2016/07/35_300x300.png" class="img-responsive"  alt="Image">
+      <img src="http://psychoticwoofer.site11.com/wp-content/uploads/2016/07/35_300x300.png" class="img-responsive"  alt="Image" />
       <p href="#second" class="btn btn-info" data-toggle="collapse">Toyota</p>  
        <div id="second" class="collapse">
+         <ul class="list-group">           
+<?php
+$args = array('category' => 11, 'posts_per_page'   => 3);
+$myposts = get_posts( $args );
+foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+	<li class ="list-group-item" >
+		<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+	</li>
+<?php endforeach; 
+wp_reset_postdata();?>         
+      </ul> 
        </div>
     </div>
 <div class="col-sm-4">
-      <img src="http://psychoticwoofer.site11.com/wp-content/uploads/2016/08/nissan-logo.png" class="img-responsive"  alt="Image">
+      <img src="http://psychoticwoofer.site11.com/wp-content/uploads/2016/08/nissan-logo.png" class="img-responsive"  alt="Image"/>
       <p href="#third" class="btn btn-info" data-toggle="collapse">Nissan</p>  
        <div id="third" class="collapse">
 </div>

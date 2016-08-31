@@ -12,6 +12,7 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/scripts/randomIMG.js"></script>
 <!-- WebGL -->
 <script src="https://rawgit.com/mrdoob/three.js/master/build/three.js"></script>
 <script src="https://rawgit.com/mrdoob/three.js/master/examples/js/Detector.js"></script>
@@ -28,12 +29,10 @@
        <a class="navbar-brand" href="<?php home_url('/')?>"><?php bloginfo('name')?></a>       
   </div>
 </nav>
-
-
-<?php  do_action('my_hook','<img src="http://psychoticwoofer.site11.com/wp-content/uploads/2016/07/wallpaper-2970828.jpg" class="align-center img-responsive"/>'); ?>
-<div class = "post-content">
-            <h3 class="text-center">Robots!</h3>
-            <p class="text-center">Lorem ipsum dolor sit amet</p>   
+<div id="quote" class="align-center img-responsive">
+ </div>
+<div class = "post-content text-center">
+           
 </div>
                               
             </div>
